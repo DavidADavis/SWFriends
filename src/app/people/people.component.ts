@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import (SwapiDataService) from '../core/core.module';
 
 @Component({
   selector: 'swf-people',

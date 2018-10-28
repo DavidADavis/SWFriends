@@ -6,7 +6,7 @@ import {SwapiDataService} from './services/swapidata.service';
 
 @NgModule({
   imports: [ HttpClientModule ],
-  exports: [ HttpClientModule],
+  exports: [ HttpClientModule ],
   declarations: [],
   providers: [SwapiDataService]
 })

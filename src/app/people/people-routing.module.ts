@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { PeopleComponent } from './people.component';
+import { PeopleGridComponent } from './people-grid.component';
 
 const routes: Routes = [
   { path: '', component: PeopleComponent }
@@ -12,5 +13,5 @@ const routes: Routes = [
   exports: [ RouterModule ]
 })
 export class PeopleRoutingModule {
-  static components = [ PeopleComponent];
+  static components = [ PeopleComponent, PeopleGridComponent];
 }
