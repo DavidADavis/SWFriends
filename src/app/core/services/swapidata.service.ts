@@ -31,7 +31,7 @@ export class SwapiDataService {
 
   getPersonPage(page: number): Observable<ISWAPIResult<IPeople[]>> {
     return this.http.get<ISWAPIResult<IPeople[]>>(
-        `${this.swapiBaseUrl}/people/?page=${page}/`)
+        `${this.swapiBaseUrl}/people/?page=${page}`)
         .pipe(
           map(results => {
             return results;

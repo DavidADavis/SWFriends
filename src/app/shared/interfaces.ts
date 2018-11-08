@@ -107,13 +107,14 @@ export interface IVehicles {
     created: Date;
     edited: Date;
     url: string;
+    bob: string;
 }
 
 export interface ISWAPIResult<T> {
     count: number;
     next: string;
     previous?: any;
-    results: T[];
+    results: T;
 }
 
 
