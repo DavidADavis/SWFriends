@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./elements.component.css']
 })
 export class ElementsComponent implements OnInit {
+  val: number;
+  step: number;
+  min: number;
+  max: number;
 
-  constructor() { }
 
   ngOnInit() {
   }
-
 }

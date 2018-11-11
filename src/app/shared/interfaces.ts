@@ -1,3 +1,4 @@
+
 export interface IPeople {
     name: string;
     height: string;

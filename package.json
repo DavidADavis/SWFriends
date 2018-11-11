@@ -7,7 +7,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "serve:dist": "static dist -H '{\"Cache-Control\": \"no-cache, must-revalidate\"}' -z"
   },
   "private": true,
   "dependencies": {
@@ -25,6 +26,8 @@
     "@ng-bootstrap/ng-bootstrap": "^4.0.0",
     "core-js": "^2.5.4",
     "hammerjs": "^2.0.8",
+    "primeicons": "^1.0.0",
+    "primeng": "^6.1.6",
     "rxjs": "~6.3.3",
     "web-animations-js": "^2.3.1",
     "zone.js": "~0.8.26"

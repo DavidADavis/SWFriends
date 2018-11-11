@@ -40,6 +40,126 @@ export class SwapiDataService {
         );
   }
 
+  getPerson(personID: number): Observable<ISWAPIResult<IPeople[]>> {
+    return this.http.get<ISWAPIResult<IPeople[]>>(
+        `${this.swapiBaseUrl}/people/${personID}/`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getPlanetsPage(page: number): Observable<ISWAPIResult<IPlanets[]>> {
+    return this.http.get<ISWAPIResult<IPlanets[]>>(
+        `${this.swapiBaseUrl}/planets/?page=${page}`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getPlanet(planetID: number): Observable<ISWAPIResult<IPlanets[]>> {
+    return this.http.get<ISWAPIResult<IPlanets[]>>(
+        `${this.swapiBaseUrl}/planets/${planetID}/`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getFilmsPage(page: number): Observable<ISWAPIResult<IFilms[]>> {
+    return this.http.get<ISWAPIResult<IFilms[]>>(
+        `${this.swapiBaseUrl}/films/?page=${page}`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getFilm(filmID: number): Observable<ISWAPIResult<IFilms[]>> {
+    return this.http.get<ISWAPIResult<IFilms[]>>(
+        `${this.swapiBaseUrl}/films/${filmID}/`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getSpeciesPage(page: number): Observable<ISWAPIResult<ISpecies[]>> {
+    return this.http.get<ISWAPIResult<ISpecies[]>>(
+        `${this.swapiBaseUrl}/species/?page=${page}`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getSpecie(specieID: number): Observable<ISWAPIResult<ISpecies[]>> {
+    return this.http.get<ISWAPIResult<ISpecies[]>>(
+        `${this.swapiBaseUrl}/species/${specieID}/`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getVehiclesPage(page: number): Observable<ISWAPIResult<IVehicles[]>> {
+    return this.http.get<ISWAPIResult<IVehicles[]>>(
+        `${this.swapiBaseUrl}/vehicles/?page=${page}`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getVehicle(vehicleID: number): Observable<ISWAPIResult<IVehicles[]>> {
+    return this.http.get<ISWAPIResult<IVehicles[]>>(
+        `${this.swapiBaseUrl}/vehicles/${vehicleID}/`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getStarshipsPage(page: number): Observable<ISWAPIResult<IStarships[]>> {
+    return this.http.get<ISWAPIResult<IStarships[]>>(
+        `${this.swapiBaseUrl}/starships/?page=${page}`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
+
+  getStarship(vehicleID: number): Observable<ISWAPIResult<IStarships[]>> {
+    return this.http.get<ISWAPIResult<IStarships[]>>(
+        `${this.swapiBaseUrl}/starships/${vehicleID}/`)
+        .pipe(
+          map(results => {
+            return results;
+        }),
+            catchError(this.handleError)
+        );
+  }
 
   private handleError(error: HttpErrorResponse) {
     console.error('server error:', error);
