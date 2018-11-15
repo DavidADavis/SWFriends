@@ -6,11 +6,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Friends of SWAPI';
+
   panelOpenState = true;
   val: number;
   step: number;
   min: number;
   max: number;
+
   navLinks: INavigationLinks[] =  [
     {path: 'people', label: 'People'},
     {path: 'demo', label: 'Elements'}
@@ -18,7 +20,9 @@ export class AppComponent {
   constructor() {
     this.navLinks = [
       {path: 'people', label: 'People'},
-      {path: 'demo', label: 'Elements'}
+      {path: 'demo', label: 'Elements'},
+      {path: 'starships', label: 'Star Ships'},
+      {path: 'species', label: 'Species'}
     ];
   }
 }

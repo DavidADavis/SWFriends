@@ -6,7 +6,9 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: '/people' },
   { path: 'people', loadChildren: '../app/people/people.module#PeopleModule' },
   { path: 'demo', loadChildren: '../app/elements/elements.module#ElementsModule' },
-  { path: '**', pathMatch: 'full', redirectTo: '/people' }
+  { path: 'starships', loadChildren: '../app/starships/starships.module#StarshipsModule' },
+  { path: 'species', loadChildren: '../app/species/species.module#SpeciesModule'},
+  { path: '**', pathMatch: 'full', redirectTo: '/people' },
 ];
 
 @NgModule({
